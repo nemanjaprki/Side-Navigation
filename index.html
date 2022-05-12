@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="style.css" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"> 
+    
+    <title>Navigation</title> 
+    
+</head> 
+
+ <body>
+       <div class="sidebar">  
+
+           <div class="logo_content"> 
+                 <div class="logo"> 
+                   <i class="fa-brands fa-pied-piper"></i>
+                   <div class="logo_name">PiedPiper</div>
+               </div> 
+                  <i class="fa-solid fa-bars" id="btn"></i>
+           </div>  
+
+              <ul class="nav_list"> 
+                  <li> 
+                      <a href="#"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search">
+                      </a> 
+                        <span class="tooltip">Search</span>
+                  </li> 
+                  <li> 
+                    <a href="#"> 
+                      <i class="fa-solid fa-border-none"></i>
+                      <span class="links_names">Dashboard</span> 
+                    </a> 
+                      <span class="tooltip">Dashboard</span>
+                </li> 
+                <li> 
+                    <a href="#"> 
+                      <i class="fa-solid fa-user"></i>
+                      <span class="links_names">Users</span>
+                    </a> 
+                      <span class="tooltip">Users</span>
+                </li> 
+                <li> 
+                    <a href="#"> 
+                      <i class="fa-solid fa-comment-dots"></i>
+                      <span class="links_names">Messages</span>
+                    </a> 
+                     <span class="tooltip">Messages</span>
+                </li> 
+                <li> 
+                    <a href="#"> 
+                      <i class="fa-solid fa-chart-pie"></i>
+                      <span class="links_names">Analytics</span>
+                    </a> 
+                      <span class="tooltip">Analytics</span>
+                </li> 
+                <li> 
+                  <a href="#"> 
+                    <i class="fa-solid fa-folder"></i>
+                    <span class="links_names">File Menager</span>
+                  </a> 
+                    <span class="tooltip">File Menager</span>
+              </li> 
+              <li> 
+                  <a href="#"> 
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="links_names">Order</span>
+                  </a> 
+                   <span class="tooltip">Order</span>
+              </li> 
+              <li> 
+                  <a href="#"> 
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="links_names">Saved</span>
+                  </a> 
+                   <span class="tooltip">Saved</span>
+              </li> 
+              <li> 
+                  <a href="#"> 
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="links_names">Setting</span>
+                  </a> 
+                    <span class="tooltip">Setting</span>
+              </li>
+         </ul>  
+
+             <div class="profile_content"> 
+                <div class="profile"> 
+                    <div class="profile_detalist"> 
+                         <img src="Image/my img.jpg" alt="image"> 
+                        <div class="name_job"> 
+                          <div class="name">Nemanja</div> 
+                          <div class="job">Developer</div>
+                         </div>
+                    </div> 
+                       <i class="fa-solid fa-right-from-bracket" id="log_out"></i>
+                </div>
+             </div> 
+         </div> 
+
+         <div class="home_content"> 
+            <div class="text_home">Home Content</div>
+         </div> 
+
+         <script> 
+            let btn = document.querySelector("#btn"); 
+            let sidebar = document.querySelector(".sidebar"); 
+            let searchBtn = document.querySelector(".fa-magnifying-glass"); 
+            let logOut = document.querySelector("#log_out");
+             
+            btn.onclick = function(){ 
+              sidebar.classList.toggle("active");
+            } 
+            searchBtn.onclick = function(){ 
+              sidebar.classList.toggle("active");
+            }  
+            logOut.onclick = function(){ 
+              sidebar.classList.toggle("active");
+            } 
+    
+         </script>
+ </body> 
+
+
+</html>
